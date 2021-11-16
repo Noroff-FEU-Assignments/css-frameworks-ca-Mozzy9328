@@ -93,17 +93,18 @@
 				</div>
 			</div>
 			<div class="index-wrapper">
-				<h1>We do YAY things</h1>
+				<div class="index-wrapper__title">
+					<h1>We do YAY things</h1>
 
-				<p>
-					Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi, a
-					rutrum justo eros pretium libero. Nullam vel enim id mauris eleifend
-					finibus et ac orci. Aliquam metus massa, aliquam quis arcu sit amet,
-					consectetur faucibus urna. Suspendisse massa diam, efficitur eu massa
-					euismod, pretium lacinia magna. Donec mi orci, sollicitudin in luctus
-					a, varius eget massa.
-				</p>
-
+					<p>
+						Nam tincidunt, sapien nec congue porta, tellus risus ullamcorper mi,
+						a rutrum justo eros pretium libero. Nullam vel enim id mauris
+						eleifend finibus et ac orci. Aliquam metus massa, aliquam quis arcu
+						sit amet, consectetur faucibus urna. Suspendisse massa diam,
+						efficitur eu massa euismod, pretium lacinia magna. Donec mi orci,
+						sollicitudin in luctus a, varius eget massa.
+					</p>
+				</div>
 				<ul class="nav nav-tabs" id="myTab" role="tablist">
 					<li class="nav-item" role="presentation">
 						<button
@@ -116,36 +117,8 @@
 							aria-controls="home"
 							aria-selected="true"
 						>
-							Home
+							First
 						</button>
-						<div class="tab-content" id="myTabContent">
-							<div class="card mb-3" style="max-width: 540px">
-								<div class="row g-0">
-									<div class="col-md-4">
-										<img
-											src="images/tab/tab-1.jpg"
-											class="img-fluid rounded-start"
-											alt="..."
-										/>
-									</div>
-									<div class="col-md-8">
-										<div class="card-body">
-											<h5 class="card-title">Card title</h5>
-											<p class="card-text">
-												This is a wider card with supporting text below as a
-												natural lead-in to additional content. This content is a
-												little bit longer.
-											</p>
-											<p class="card-text">
-												<small class="text-muted"
-													>Last updated 3 mins ago</small
-												>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</li>
 					<li class="nav-item" role="presentation">
 						<button
@@ -158,36 +131,8 @@
 							aria-controls="profile"
 							aria-selected="false"
 						>
-							Profile
+							Second
 						</button>
-						<div class="tab-content" id="myTabContent">
-							<div class="card mb-3" style="max-width: 540px">
-								<div class="row g-0">
-									<div class="col-md-4">
-										<img
-											src="images/tab/tab-2.jpg"
-											class="img-fluid rounded-start"
-											alt="..."
-										/>
-									</div>
-									<div class="col-md-8">
-										<div class="card-body">
-											<h5 class="card-title">Card title</h5>
-											<p class="card-text">
-												This is a wider card with supporting text below as a
-												natural lead-in to additional content. This content is a
-												little bit longer.
-											</p>
-											<p class="card-text">
-												<small class="text-muted"
-													>Last updated 3 mins ago</small
-												>
-											</p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
 					</li>
 					<li class="nav-item" role="presentation">
 						<button
@@ -200,38 +145,105 @@
 							aria-controls="contact"
 							aria-selected="false"
 						>
-							Contact
+							Third
 						</button>
-						<div class="tab-content" id="myTabContent">
-							<div class="card mb-3" style="max-width: 540px">
-								<div class="row g-0">
-									<div class="col-md-4">
-										<img
-											src="images/tab/tab-3.jpg"
-											class="img-fluid rounded-start"
-											alt="..."
-										/>
-									</div>
-									<div class="col-md-8">
-										<div class="card-body">
-											<h5 class="card-title">Card title</h5>
-											<p class="card-text">
-												This is a wider card with supporting text below as a
-												natural lead-in to additional content. This content is a
-												little bit longer.
-											</p>
-											<p class="card-text">
-												<small class="text-muted"
-													>Last updated 3 mins ago</small
-												>
-											</p>
-										</div>
+					</li>
+				</ul>
+				<div class="tab-content" id="myTabContent">
+					<div
+						class="tab-pane fade show active"
+						id="home"
+						role="tabpanel"
+						aria-labelledby="home-tab"
+					>
+						<div class="card mb-3" style="max-width: 540px">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img
+										src="images/tab/tab-1.jpg"
+										class="img-fluid rounded-start"
+										alt="..."
+									/>
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a
+											little bit longer.
+										</p>
+										<p class="card-text">
+											<small class="text-muted">Last updated 3 mins ago</small>
+										</p>
 									</div>
 								</div>
 							</div>
 						</div>
-					</li>
-				</ul>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="profile"
+						role="tabpanel"
+						aria-labelledby="profile-tab"
+					>
+						<div class="card mb-3" style="max-width: 540px">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img
+										src="images/tab/tab-2.jpg"
+										class="img-fluid rounded-start"
+										alt="..."
+									/>
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a
+											little bit longer.
+										</p>
+										<p class="card-text">
+											<small class="text-muted">Last updated 3 mins ago</small>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="tab-pane fade"
+						id="contact"
+						role="tabpanel"
+						aria-labelledby="contact-tab"
+					>
+						<div class="card mb-3" style="max-width: 540px">
+							<div class="row g-0">
+								<div class="col-md-4">
+									<img
+										src="images/tab/tab-3.jpg"
+										class="img-fluid rounded-start"
+										alt="..."
+									/>
+								</div>
+								<div class="col-md-8">
+									<div class="card-body">
+										<h5 class="card-title">Card title</h5>
+										<p class="card-text">
+											This is a wider card with supporting text below as a
+											natural lead-in to additional content. This content is a
+											little bit longer.
+										</p>
+										<p class="card-text">
+											<small class="text-muted">Last updated 3 mins ago</small>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
 		<footer class="footer">
