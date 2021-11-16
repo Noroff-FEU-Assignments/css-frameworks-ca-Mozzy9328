@@ -1,0 +1,30 @@
+@import "./colors";
+@import "./typography";
+
+body {
+	font-family: "Playfair Display";
+	background-color: $background-color;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	width: 90%;
+	margin: 0 auto;
+
+	@media (max-width: 900px) {
+		& {
+			flex-direction: column-reverse;
+		}
+	}
+}
+
+.index-wrapper {
+	@extend .wrapper;
+
+	@media (max-width: 900px) {
+		& {
+			flex-direction: column;
+		}
+	}
+}

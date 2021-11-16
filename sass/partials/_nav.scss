@@ -1,0 +1,32 @@
+@import "./colors";
+
+a {
+	&.navbar-brand {
+		color: $primary-color;
+		font-weight: bold;
+		font-style: italic;
+	}
+}
+
+.active {
+	background-color: #ffff;
+}
+
+//Search
+
+.btn {
+	margin-left: -13px;
+	border-radius: 0px 5px 5px 0px;
+	border-left: none;
+	border: none;
+	background-color: $primary-color;
+	color: #fff;
+}
+
+@media (min-width: 900px) {
+	.d-flex {
+		max-width: 50%;
+		position: absolute;
+		right: 0;
+	}
+}
