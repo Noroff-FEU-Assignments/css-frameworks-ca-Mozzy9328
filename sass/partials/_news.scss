@@ -1,0 +1,33 @@
+@import "colors";
+
+.page-link {
+	color: $primary-color;
+}
+
+.page-item {
+	&.active {
+		.page-link {
+			background-color: $primary-color;
+			color: #fff !important;
+		}
+	}
+}
+
+.card-body {
+	&__title {
+		color: #000;
+	}
+	&__button {
+		border-right: 25px solid $secondary-color;
+		border: none;
+		background-color: $primary-color;
+		color: #fff;
+		width: 80%;
+		margin: 10px auto;
+		padding: 5px;
+	}
+}
+
+.card {
+	padding-bottom: 20px;
+}

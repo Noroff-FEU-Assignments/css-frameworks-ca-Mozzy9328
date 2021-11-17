@@ -1,12 +1,21 @@
 @import "./colors";
 @import "./typography";
 
+body,
+html {
+	height: 100%;
+}
+
 body {
 	font-family: "Playfair Display";
 	background-color: $background-color;
+	margin: 0;
+}
+.wrapper {
+	flex: 1 0 auto;
 }
 
-.wrapper {
+.first-wrapper {
 	display: flex;
 	flex-direction: row;
 	width: 90%;
@@ -16,5 +25,31 @@ body {
 		& {
 			flex-direction: column-reverse;
 		}
+	}
+}
+
+.second-wrapper {
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	flex-direction: column;
+
+	&__title {
+		margin: 50px 0px;
+	}
+
+	@media (max-width: 900px) {
+		& {
+			flex-direction: column;
+		}
+	}
+}
+
+.news-wrapper {
+	@extend .second-wrapper;
+	margin: 20px auto;
+
+	h1 {
+		margin-bottom: 30px;
 	}
 }

@@ -1,6 +1,37 @@
+footer {
+	flex-shrink: 0;
+}
+
 .footer {
 	display: flex;
-	flex: 1 0 auto;
+	flex-shrink: 0;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-evenly;
+	padding-top: 20px;
+	background-color: #fff;
+
+	&__text {
+		display: flex;
+		flex-direction: row;
+	}
+
+	@media (max-width: 990px) {
+		flex-direction: column;
+
+		&__text {
+			justify-content: space-around;
+		}
+		&__social {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			margin-bottom: 20px;
+			font-size: 40px;
+		}
+	}
+
+	i {
+		font-size: 25px;
+		color: $secondary-color;
+	}
 }

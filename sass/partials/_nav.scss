@@ -1,5 +1,9 @@
 @import "./colors";
 
+.navbar {
+	padding-bottom: 20px;
+}
+
 a {
 	&.navbar-brand {
 		color: $primary-color;

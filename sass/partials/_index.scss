@@ -1,22 +1,27 @@
-.index-wrapper {
-	display: flex;
-	width: 90%;
-	margin: 0 auto;
-	flex-direction: column;
-
-	&__title {
-		margin: 50px 0px;
-	}
-
-	@media (max-width: 900px) {
-		& {
-			flex-direction: column;
-		}
-	}
-}
-
 .nav {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+}
+
+// cards
+
+.nav-link {
+	color: $primary-color;
+
+	&.active {
+		background-color: #fff;
+		color: #000 !important;
+	}
+}
+
+.col-md-4 {
+	width: 176px;
+	margin: 10px;
+}
+
+.card-body__text {
+	a {
+		margin-right: 25px;
+	}
 }

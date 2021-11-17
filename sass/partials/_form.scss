@@ -1,6 +1,6 @@
 form {
 	margin: 2% auto;
-	flex: 1 0;
+	flex: 0 1 auto;
 }
 
 .form-info {
@@ -10,19 +10,9 @@ form {
 	align-items: center;
 	margin: 8% auto;
 
-	&__phone,
-	&__email,
-	&__map {
+	&__box {
+		width: 100%;
 		display: flex;
-		flex: 1 1 auto;
 		flex-direction: row;
-	}
-}
-
-i {
-	margin-right: 30px;
-
-	&.fa-map-pin {
-		font-size: 25px;
 	}
 }
